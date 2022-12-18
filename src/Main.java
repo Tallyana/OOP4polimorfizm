@@ -7,7 +7,7 @@ public class Main {
         Car car2 = new Car("BMW","Z8",3.5);
         Car car3 = new Car("Kia","Sportage",2.8);
         Car car4 = new Car("Hundai","Avante",3.0);
-
+//-----------------------------------------------------------------------------------------------------
         Bus bus1 = new Bus ("Ikarus","b355",10.0);
         Bus bus2 = new Bus ("Maz","d241",11.0);
         Bus bus3 = new Bus ("liAz","l529260",12.0);
