@@ -14,11 +14,16 @@ public  abstract class Transport extends Object {
         this.engineVolume = engineVolume;
     }
 
-    public Transport(String brand, String model, double engineVolume) {
-        if (brand != null && !brand.isEmpty()) this.brand = brand;
-        if (model != null && !model.isEmpty()) this.model = model;
-
+    public Transport(String brand, String model) {
+        if (brand != null && !brand.isEmpty()) {
+            this.brand = brand;
+        }
+        if (model != null && !model.isEmpty()) {
+            this.model = model;
+        }
+        this.engineVolume = engineVolume;
     }
+
     public double getEngineVolume() {
         return engineVolume;
     }
