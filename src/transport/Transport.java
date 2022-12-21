@@ -14,7 +14,7 @@ public  abstract class Transport extends Object {
         this.engineVolume = engineVolume;
     }
 
-    public Transport(String brand, String model) {
+    public Transport(String brand, String model,double engineVolume) {
         if (brand != null && !brand.isEmpty()) {
             this.brand = brand;
         }
@@ -24,9 +24,6 @@ public  abstract class Transport extends Object {
         this.engineVolume = engineVolume;
     }
 
-    public double getEngineVolume() {
-        return engineVolume;
-    }
 
     public abstract void startUp();
 
