@@ -7,9 +7,9 @@ public class Car extends Transport implements Competing {
 
     public static final String[] CAR_PIT_STOP = {"Поменять пробитые колеса", "Залить бензин", "Выйти перекурить"};
 
-    public static final String[] getCarBestLapTime = {"№7", "№8", "№9"};
+    public static final String[] getCarBestLapTime = {"Лучшее время круга у №7", "Лучшее время круга у №8", " Лучшее время круга у №9"};
 
-    public static final String[] getCarMaxSpeed = {"№10", "№11", "№12"};
+    public static final String[] getCarMaxSpeed = {"Максимальная скорость у №10", " Максимальная скорость у №11", "Максимальная скорость у №12"};
 
     //---------------------------------
     public static void CAR_PIT_STOP() {

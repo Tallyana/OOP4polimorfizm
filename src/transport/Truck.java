@@ -3,9 +3,9 @@ package transport;
 public class Truck extends Transport implements Competing {
     public static String[] getTruckPitStop = {"Поменять колеса", "Залить топливо 2", "Выйти перекурить"};
 
-    public static String[] getTruckBestLapTime = {"№3", "№4", "№5"};
+    public static String[] getTruckBestLapTime = {"Лучшее время круга №3", "Лучшее время круга у №4", "Лучшее время круга у №5"};
 
-    public static String[] getTruckMaxSpeed = {"№1", "№2", "№6"};
+    public static String[] getTruckMaxSpeed = {"Максимальная скорость у №1", "Максимальная скорость у №2", "Максимальная скорость у №6"};
 
     public static void getTruckPitStop() {
         System.out.println(getTruckPitStop[0]);
@@ -32,7 +32,7 @@ public class Truck extends Transport implements Competing {
 
     @Override
     public String[] getMaxSpeed() {
-        return new String[0];
+        return new String[0]  ;
     }
 
     //----------------------------------------------------------

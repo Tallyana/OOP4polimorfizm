@@ -7,9 +7,9 @@ public class Bus extends Transport implements Competing {
 
     public static final String[] BUS_PIT_STOP = {"Поменять колеса", "Залить топливо 2", "Выйти перекурить"};
 
-    public static final String[] getBusBestLapTime = {"№13", "№14", "№15"};
+    public static final String[] getBusBestLapTime = {"Лучшее время круга у №13", "Лучшее время круга у №14", "Лучшее время круга у №15"};
 
-    public static final String[] getBusMaxSpeed = {"№16", "№17", "№18"};
+    public static final String[] getBusMaxSpeed = {"Максимальная скорость у №16", "Максимальная скорость у №17", "Максимальная скорость у №18"};
 
     public void startUp() {
         System.out.println(getBrand() + " Начать движение.");
