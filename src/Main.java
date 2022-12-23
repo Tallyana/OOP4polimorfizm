@@ -45,5 +45,7 @@ public class Main {
         truck2.drive();
         bus1.drive();
         car3.drive();
+        //----------------------------------------------Дженерики
+
     }
 }
