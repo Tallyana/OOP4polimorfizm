@@ -1,6 +1,6 @@
 package transport;
 
-public class Car extends Transport implements Competing {
+public class Car<D extends Car> extends Transport implements Competing {
     public Car(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
     }
@@ -10,6 +10,8 @@ public class Car extends Transport implements Competing {
     public static final String[] getCarBestLapTime = {"Лучшее время круга у №7", "Лучшее время круга у №8", " Лучшее время круга у №9"};
 
     public static final String[] getCarMaxSpeed = {"Максимальная скорость у №10", " Максимальная скорость у №11", "Максимальная скорость у №12"};
+
+
 
     //---------------------------------
     public static void CAR_PIT_STOP() {

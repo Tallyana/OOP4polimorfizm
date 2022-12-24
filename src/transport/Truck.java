@@ -1,6 +1,6 @@
 package transport;
 
-public class Truck extends Transport implements Competing {
+public class Truck<D extends Truck> extends Transport implements Competing {
     public static String[] getTruckPitStop = {"Поменять колеса", "Залить топливо 2", "Выйти перекурить"};
 
     public static String[] getTruckBestLapTime = {"Лучшее время круга №3", "Лучшее время круга у №4", "Лучшее время круга у №5"};

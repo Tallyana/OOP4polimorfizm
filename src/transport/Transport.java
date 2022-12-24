@@ -34,22 +34,25 @@ public  abstract class Transport extends Object {
     }
 
 
-    public String getBrand() {
-        return brand;
+    public static String getBrand() {
+        return getBrand();
     }
 
     public void setBrand(String brand) {
         this.brand = brand;
     }
 
-        public String getModel() {
-            return model;
+        public static String getModel() {
+            return getModel();
         }
 
         public void setModel(String model){
             this.model = model;
         }
-    }
+
+
+}
+
 
 
 

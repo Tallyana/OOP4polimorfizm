@@ -1,11 +1,15 @@
 
+
 package transport;
 
-public abstract class Driver extends Object{
+public abstract class Driver < A extends Transport & Competing > {
 
     private String name;               //имя
     private String driversLicense;   //категория прав
     private double experience;       //стаж
+
+
+
     //---------------------------------------------
      abstract  void startMoving();   //начать движение
 
@@ -15,7 +19,7 @@ public abstract class Driver extends Object{
 
     abstract void refuel();                        //заправить
 
-    void driver(Transport transport){
+    void driver(A transport){
         System.out.println("???????????"+ transport.getBrand());
     }
 //----------------------------------------------------
@@ -32,8 +36,8 @@ public abstract class Driver extends Object{
     }
 
     //---------------
-    public String getName() {
-        return name;
+    public static String getName() {
+        return getName();
     }
 
     public void setName(String name) {
