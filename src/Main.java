@@ -50,10 +50,6 @@ public class Main {
         DriverD driverD = new DriverD("Пётр", "Д",8.5);
 
 
-        Car<DriverB> car5 = new Car<>("Лада", "Гранта", 2.5);
-        Car<DriverB> car6 = new Car<>("УАЗ", "Патриот", 3.5);
-        Car<DriverB> car7 = new Car<>("КИА", "098", 2.8);
-        Car<DriverB> car8 = new Car<>("Мерседес", "Бенц", 3.0);
 
         Bus<DriverC> bus5 = new Bus <>("Ikarus","b355",10.0);
         Bus <DriverC> bus6 = new Bus <>("Maz","d241",11.0);
@@ -66,7 +62,7 @@ public class Main {
         Truck<DriverD> truck6 = new Truck<>("Kamaz","no2",13.0);
         Truck<DriverD> truck8 = new Truck<>("Ural","no3",10.0);
 
-         driverB.getCarMessage(car6);
+
         driverD.getTruckMessage(truck5);
         driverC.getBusMessage(bus8);
 
