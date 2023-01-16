@@ -68,4 +68,20 @@ public class Main {
 
         System.out.println(bus8.toString());
     }
+    public static void checkTransport(Transport...transports){
+        int count =0;
+        for(Transport transport: transports){
+            if(!transport.isDiagnosticsPassed()) {
+                try {
+                    throw new RuntimeException(transport.getBrand() + " " + transport.getModel() + "не прошел диагностику!");
+                }catch (RuntimeException e){
+                    System.out.println(e.getMessage());
+                }
+            } else {
+                count++;
+            }
+
+        }
+        System.out.println("Диагностику прошли " + count + "из " + transports.length + " автомобилей.");
+    }
 }

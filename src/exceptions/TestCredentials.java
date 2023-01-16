@@ -6,7 +6,7 @@ public class TestCredentials {
         try {
             Credentials.checkCredentials("admin", "admin", "admin");
             Credentials.checkCredentials("админ", "аdmin", "админ");
-        } catch (WrongLoginException | WrongPasswordException e) {
+        } catch (WrongPasswordException e) {
             System.out.println("Аутентификация не прошла");
             e.printStackTrace();
         } finally {

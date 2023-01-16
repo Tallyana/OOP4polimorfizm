@@ -10,6 +10,8 @@ public  abstract class Transport extends Object {
     private String model;
     private static double engineVolume;
 
+    private  boolean diagnosticsPassed;
+
     public Transport(double engineVolume) {
         this.engineVolume = engineVolume;
     }
@@ -22,7 +24,10 @@ public  abstract class Transport extends Object {
             this.model = model;
         }
         this.engineVolume = engineVolume;
+
     }
+     public boolean isDiagnosticsPassed(){
+        return diagnosticsPassed ;}
 
 
     public abstract void startUp();

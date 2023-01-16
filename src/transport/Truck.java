@@ -26,6 +26,11 @@ public class Truck<D extends Truck> extends Transport implements Competing {
     }
 
     @Override
+    public boolean isDiagnosticsPassed() {
+        return super.isDiagnosticsPassed();
+    }
+
+    @Override
     public String[] getBestLapTime() {
         return new String[0];
     }
