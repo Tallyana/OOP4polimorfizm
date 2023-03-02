@@ -31,6 +31,8 @@ public  abstract class Transport extends Object {
 
     public abstract void stopEnd();
 
+
+
     public String toString() {
         return brand + " Модель " + model + ".Обьем двигателя " + engineVolume;
     }

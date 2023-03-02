@@ -15,9 +15,6 @@ public enum Size {
         this.max = max;
     }
 
-    Size() {
-
-    }
 
     public int getMin() {
         return min;
@@ -36,4 +33,10 @@ public enum Size {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Вместимость автобуса " + "минимум = " + min + ", максимум = " + max ;
+    }
+
 }

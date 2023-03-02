@@ -58,4 +58,10 @@ public class Bus<D> extends Transport implements Competing {
     public void drive() {
         System.out.println("УЕХАЛИ!!");
     }
+
+
+    public  void printType()
+    {  System.out.println("“Данных по транспортному средству недостаточно.");
+    }
 }
+

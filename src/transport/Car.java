@@ -16,7 +16,6 @@ public class Car<D extends Car> extends Transport implements Competing {
     public static final String[] getCarMaxSpeed = {"Максимальная скорость у №10", " Максимальная скорость у №11", "Максимальная скорость у №12"};
 
 
-
     //---------------------------------
     public static void CAR_PIT_STOP() {
         System.out.println(CAR_PIT_STOP[1]);
@@ -38,6 +37,7 @@ public class Car<D extends Car> extends Transport implements Competing {
     public void stopEnd() {
         System.out.println(getBrand() + " Закончить движение.");
     }
+
 
     //----------------------------------------
     @Override
@@ -62,3 +62,4 @@ public class Car<D extends Car> extends Transport implements Competing {
 
 
 }
+
