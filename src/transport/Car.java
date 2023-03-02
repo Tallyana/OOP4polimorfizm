@@ -1,13 +1,26 @@
 package transport;
 
 public class Car<D extends Car> extends Transport implements Competing {
+
+    private BodyType bodyType;
+
     public Car(
             String brand,
             String model,
-            double engineVolume) {
+            double engineVolume,
+            String bodyType ) {
         super(brand, model, engineVolume);
 
     }
+
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
+
 
     public static final String[] CAR_PIT_STOP = {"Поменять пробитые колеса", "Залить бензин", "Выйти перекурить"};
 
