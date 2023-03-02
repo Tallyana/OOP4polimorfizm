@@ -1,7 +1,8 @@
 package transport;
 
+
 public enum BodyType {
-    SEDAN,
+     SEDAN,
     HATCHBACK,
     COUPE,
     UNIVERSAL,
@@ -9,5 +10,19 @@ public enum BodyType {
     CROSSOVER,
     PICKUP,
     VAN,
-    MINIVAN
+    MINIVAN;
+    private BodyType bodyType;
+
+
+
+
+    public BodyType getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(BodyType bodyType) {
+        this.bodyType = bodyType;
+    }
+
+
 }

@@ -2,10 +2,7 @@
 package transport;
 
 public  abstract class Transport extends Object {
-    /*«Марка», «Модель»,«Объем двигателя».
-    Также все авто имеют:
-       метод «начать движение»,
-    метод «закончить движение».*/
+
     private String brand;
     private String model;
     private static double engineVolume;

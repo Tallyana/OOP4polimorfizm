@@ -59,4 +59,6 @@ public class Car<D extends Car> extends Transport implements Competing {
     public void drive() {
         System.out.println("ДОЕХАЛИ!!");
     }
+
+
 }
