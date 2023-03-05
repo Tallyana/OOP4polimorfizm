@@ -3,10 +3,10 @@ import transport.*;
 
 public class Main {
     public static void main(String[] args) {
-        Car<Car> car1 = new Car<Car>("Ауди","А8L",2.5,"Хэтчбэк");
-        Car<Car> car2 = new Car<Car>("BMW","Z8",3.5,"Кроссовер");
-        Car<Car> car3 = new Car<Car>("Kia","Sportage",2.8,"Купе");
-        Car<Car> car4 = new Car<Car>("Hundai","Avante",3.0,"Универсал");
+        Car<Car> car1 = new Car<Car>("Ауди","А8L",2.5);
+        Car<Car> car2 = new Car<Car>("BMW","Z8",3.5);
+        Car<Car> car3 = new Car<Car>("Kia","Sportage",2.8);
+        Car<Car> car4 = new Car<Car>("Hundai","Avante",3.0);
 
         Bus<Bus> bus1 = new Bus<Bus>("Ikarus","b355",10.0);
         Bus<Bus> bus2 = new Bus<Bus>("Maz","d241",11.0);
@@ -21,7 +21,6 @@ public class Main {
         car1.startUp();
         car2.stopEnd();
 
-        System.out.println(truck4.getBrand());
         System.out.println(bus2.toString());
         System.out.println(bus1.toString());
         System.out.println(car4.toString());
@@ -68,6 +67,9 @@ public class Main {
 
         System.out.println(bus8.toString());
     }
+
+
+
     public static void checkTransport(Transport...transports){
         int count =0;
         for(Transport transport: transports){

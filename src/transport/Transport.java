@@ -37,7 +37,6 @@ public  abstract class Transport extends Object {
         return brand + " Модель " + model + ".Обьем двигателя " + engineVolume;
     }
 
-
     public static String getBrand(){
         return getBrand();}
 

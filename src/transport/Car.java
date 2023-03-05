@@ -2,23 +2,12 @@ package transport;
 
 public class Car<D extends Car> extends Transport implements Competing {
 
-    private BodyType bodyType;
 
     public Car(
             String brand,
             String model,
-            double engineVolume,
-            String bodyType ) {
+            double engineVolume) {
         super(brand, model, engineVolume);
-
-    }
-
-    public BodyType getBodyType() {
-        return bodyType;
-    }
-
-    public void setBodyType(BodyType bodyType) {
-        this.bodyType = bodyType;
     }
 
 
@@ -73,6 +62,10 @@ public class Car<D extends Car> extends Transport implements Competing {
         System.out.println("ДОЕХАЛИ!!");
     }
 
-
+    @Override
+    public boolean isDiagnosticsPassed() {
+        System.out.println("Легковые автомобили могут проходить диагностику");;
+        return true;
+    }
 }
 

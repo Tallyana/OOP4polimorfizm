@@ -13,7 +13,7 @@ public class Bus<D> extends Transport implements Competing {
 
 
     public boolean isDiagnosticsPassed() {
-        System.out.println("автобусы не могут проходить диагностику");
+        System.out.println("Автобусы не могут проходить диагностику");
         return false;
     }
 

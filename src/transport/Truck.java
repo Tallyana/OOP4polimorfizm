@@ -27,7 +27,8 @@ public class Truck<D extends Truck> extends Transport implements Competing {
 
     @Override
     public boolean isDiagnosticsPassed() {
-        return super.isDiagnosticsPassed();
+        System.out.println("Грузовые автомобили могут проходить диагностику");;
+        return true;
     }
 
     @Override
