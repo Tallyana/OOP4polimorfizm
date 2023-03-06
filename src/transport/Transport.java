@@ -7,7 +7,11 @@ public  abstract class Transport extends Object {
     private String model;
     private static double engineVolume;
 
-    private  boolean diagnosticsPassed;
+    public void setDiagnosticsPassed(boolean diagnosticsPassed) {
+        isDiagnosticsPassed = diagnosticsPassed;
+    }
+
+    private boolean isDiagnosticsPassed;
 
     public Transport(double engineVolume) {
         this.engineVolume = engineVolume;
@@ -23,42 +27,42 @@ public  abstract class Transport extends Object {
         this.engineVolume = engineVolume;
 
     }
-     public boolean isDiagnosticsPassed(){
-        return diagnosticsPassed ;}
 
-    public  boolean checkTransportNeedService(){
+    public boolean checkTransportNeedService() {
         try {
             passDiagnostics();
         } catch (TransportTypeException e) {
             return false;
         }
         return true;
-        }
+    }
+
+    public boolean passDiagnostics() {
+        this.isDiagnosticsPassed = isDiagnosticsPassed;
+        return false;
+    }
 
     public abstract void startUp();
 
     public abstract void stopEnd();
 
 
-
     public String toString() {
         return brand + " Модель " + model + ".Обьем двигателя " + engineVolume;
     }
 
-    public static String getBrand(){
-        return getBrand();}
+
 
     public void setBrand(String brand) {
         this.brand = brand;
     }
 
-        public static String getModel() {
-            return getModel();
-        }
 
-        public void setModel(String model){
-            this.model = model;
-        }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
 
 
 }
