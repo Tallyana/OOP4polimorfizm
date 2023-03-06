@@ -25,12 +25,12 @@ public  class DriverC<C extends Driver & Competing> {
 
 
     public String getBusMessage(Bus<Bus> bus6) {
-        return "Водитель " + Driver.getName() + "управляет автомобилем " + Bus.getBrand()+ Bus.getModel()
+        return "Водитель " + Driver.getName() + "управляет автомобилем " +  Bus.getModel()
                 +" и будет учавствовать в заезде";
 
     }
     public void getBuSMessage() {
-        System.out.println("Водитель " + Driver.getName() + "управляет автомобилем " + Bus.getBrand()+ Bus.getModel()
+        System.out.println("Водитель " + Driver.getName() + "управляет автомобилем " +  Bus.getModel()
                 +" и будет учавствовать в заезде");
 
     }

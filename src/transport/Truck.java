@@ -25,10 +25,15 @@ public class Truck<D extends Truck> extends Transport implements Competing {
         return new String[0];
     }
 
-    @Override
+  /*  @Override
     public boolean isDiagnosticsPassed() {
         System.out.println("Грузовые автомобили могут проходить диагностику");;
         return true;
+    }*/
+
+    @Override
+    public boolean passDiagnostics() {
+        return super.passDiagnostics();
     }
 
     @Override
@@ -51,11 +56,11 @@ public class Truck<D extends Truck> extends Transport implements Competing {
     }
 
     public void startUp() {
-        System.out.println(getBrand() + " Начать движение.");
+        System.out.println(getModel() + " Начать движение.");
     }
 
     public void stopEnd() {
-        System.out.println(getBrand() + " Закончить движение.");
+        System.out.println(getModel() + " Закончить движение.");
     }
     //---------------------------------------------------
 

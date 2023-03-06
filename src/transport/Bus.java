@@ -12,17 +12,23 @@ public class Bus<D> extends Transport implements Competing {
     public static final String[] getBusMaxSpeed = {"Максимальная скорость у №16", "Максимальная скорость у №17", "Максимальная скорость у №18"};
 
 
-    public boolean isDiagnosticsPassed() {
-        System.out.println("Автобусы не могут проходить диагностику");
-        return false;
+    /*public boolean isDiagnosticsPassed()
+    throws TransportTypeException {
+        throw new TransportTypeException
+      ("Автобусы не должны проходить диагностику");
+    }*/
+
+    @Override
+    public boolean passDiagnostics() {
+        return super.passDiagnostics();
     }
 
     public void startUp() {
-        System.out.println(getBrand() + " Начать движение.");
+        System.out.println(getModel() + " Начать движение.");
     }
 
     public void stopEnd() {
-        System.out.println(getBrand() + " Закончить движение.");
+        System.out.println(getModel() + " Закончить движение.");
     }
 
     //----------------------------------------------------

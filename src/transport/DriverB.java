@@ -23,16 +23,16 @@ public  class DriverB<B  extends Car> extends Driver {
     {
         return getBrand();}
 
-    public String getCarMessage(Car car) {
-        return "Водитель " + getName() + "управляет автомобилем " + car.getBrand()+car.getModel()
+   /* public String getCarMessage(Car car) {
+        return "Водитель " + getName() + "управляет автомобилем " + car.getModel()
                 +" и будет учавствовать в заезде";
 
-    }
+    }*/
 
-    public void getCarMessage(Transport car) {
-        System.out.println("Водитель " + getName() + "управляет автомобилем " + car.getBrand()+car.getModel()
+   /* public void getCarMessage(Transport car) {
+        System.out.println("Водитель " + getName() + "управляет автомобилем " +car.getModel()
                 +" и будет учавствовать в заезде");
 
-    }
+    }*/
 }
 

@@ -23,7 +23,7 @@ public  class DriverD<D extends Driver & Competing>extends Truck<Truck> {
 
 
     public String getTruckMessage(Truck<Truck> truck) {
-        return "Водитель " + Driver.getName() + "управляет автомобилем " + Truck.getBrand() + Truck.getModel()
+        return "Водитель " + Driver.getName() + "управляет автомобилем " +  Truck.getModel()
                 + " и будет учавствовать в заезде";
 
         }

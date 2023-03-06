@@ -19,9 +19,9 @@ public abstract class Driver < A extends Transport & Competing > {
 
     abstract void refuel();                        //заправить
 
-    void driver(A transport){
-        System.out.println("???????????"+ transport.getBrand());
-    }
+   /* void driver( Car transport){
+        System.out.println("???????????"+ transport.getModel());
+    }*/
 //----------------------------------------------------
 
 

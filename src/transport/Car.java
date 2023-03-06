@@ -32,12 +32,12 @@ public class Car<D extends Car> extends Transport implements Competing {
     }
 
     //--------------------------------
-    public void startUp() {
-        System.out.println(getBrand() + " Начать движение.");
+public void startUp() {
+        System.out.println(setModel() + " Начать движение.");
     }
 
     public void stopEnd() {
-        System.out.println(getBrand() + " Закончить движение.");
+        System.out.println(setModel() + " Закончить движение.");
     }
 
 
@@ -62,10 +62,15 @@ public class Car<D extends Car> extends Transport implements Competing {
         System.out.println("ДОЕХАЛИ!!");
     }
 
-    @Override
+   /* @Override
     public boolean isDiagnosticsPassed() {
         System.out.println("Легковые автомобили могут проходить диагностику");;
         return true;
+    }*/
+
+    @Override
+    public boolean passDiagnostics() {
+        return super.passDiagnostics();
     }
 }
 
