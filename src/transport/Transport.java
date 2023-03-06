@@ -26,6 +26,14 @@ public  abstract class Transport extends Object {
      public boolean isDiagnosticsPassed(){
         return diagnosticsPassed ;}
 
+    public  boolean checkTransportNeedService(){
+        try {
+            passDiagnostics();
+        } catch (TransportTypeException e) {
+            return false;
+        }
+        return true;
+        }
 
     public abstract void startUp();
 
